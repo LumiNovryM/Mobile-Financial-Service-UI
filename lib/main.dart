@@ -61,9 +61,12 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 
+
   // Page
   final List<Widget> screens = [
-    const History(),
+    const History(
+      title: "Mobile Financial Service",
+    ),
   ];
 
   @override
@@ -333,7 +336,7 @@ class _MyHomePageState extends State<MyHomePage> {
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => const History()));
+                                    builder: (context) => const History(title: "Mobile Financial Service",)));
                           },
                           // History
                           child: Column(
