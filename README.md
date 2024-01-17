@@ -1,5 +1,4 @@
-# clone_ui
-
+# Mobile Financial Service UI
 A new Flutter project.
 
 ## Getting Started
