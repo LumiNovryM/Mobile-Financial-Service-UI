@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'history.dart';
 
 void main() {
   runApp(const MyApp());
@@ -59,6 +60,11 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
     );
   }
+
+  // Page
+  final List<Widget> screens = [
+    const History(),
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -131,7 +137,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 ],
               ),
               const SizedBox(height: 25.0),
-              // Wallet Information Card
+              // Wallet Information Card & Fitur
               Container(
                 padding: const EdgeInsets.all(10.0),
                 decoration: BoxDecoration(
@@ -322,32 +328,40 @@ class _MyHomePageState extends State<MyHomePage> {
                             )
                           ],
                         ),
-                        // History
-                        Column(
-                          children: [
-                            Container(
-                              height: 45,
-                              width: 45,
-                              decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(50.0),
-                                  color: Colors.white),
-                              child: const Icon(
-                                Icons.history,
-                                color: Color(0xFF535de5),
-                                size: 20.0,
+                        GestureDetector(
+                          onTap: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => const History()));
+                          },
+                          // History
+                          child: Column(
+                            children: [
+                              Container(
+                                height: 45,
+                                width: 45,
+                                decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(50.0),
+                                    color: Colors.white),
+                                child: const Icon(
+                                  Icons.history,
+                                  color: Color(0xFF535de5),
+                                  size: 20.0,
+                                ),
                               ),
-                            ),
-                            const SizedBox(
-                              height: 8.0,
-                            ),
-                            Text(
-                              "History",
-                              style: GoogleFonts.poppins(
-                                  color: Colors.white,
-                                  fontSize: 10.0,
-                                  fontWeight: FontWeight.w500),
-                            )
-                          ],
+                              const SizedBox(
+                                height: 8.0,
+                              ),
+                              Text(
+                                "History",
+                                style: GoogleFonts.poppins(
+                                    color: Colors.white,
+                                    fontSize: 10.0,
+                                    fontWeight: FontWeight.w500),
+                              )
+                            ],
+                          ),
                         ),
                       ],
                     )
