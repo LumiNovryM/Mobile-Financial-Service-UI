@@ -334,7 +334,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     borderRadius: BorderRadius.circular(16.0),
                     color: const Color(0xFFf5f5f5),
                   ),
-                  height: 175.0,
+                  height: 210.0,
                   width: double.infinity,
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -343,6 +343,266 @@ class _MyHomePageState extends State<MyHomePage> {
                         "Other Services",
                         style:
                             GoogleFonts.poppins(color: const Color(0xFF77767b)),
+                      ),
+                      const SizedBox(
+                        height: 10.0,
+                      ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Column(
+                            children: [
+                              // Create Invoice
+                              Column(
+                                children: [
+                                  Container(
+                                    height: 45,
+                                    width: 45,
+                                    decoration: BoxDecoration(
+                                        borderRadius:
+                                            BorderRadius.circular(10.0),
+                                        color: const Color(0xFFd8d8f4)),
+                                    child: const Icon(
+                                      Icons.library_books,
+                                      color: Color(0xFF535de5),
+                                      size: 20.0,
+                                    ),
+                                  ),
+                                  const SizedBox(
+                                    height: 8.0,
+                                  ),
+                                  Text(
+                                    "Create Invoice",
+                                    style: GoogleFonts.poppins(
+                                        color: const Color(0xFF77767b),
+                                        fontSize: 10.0,
+                                        fontWeight: FontWeight.w500),
+                                  )
+                                ],
+                              ),
+                              const SizedBox(
+                                height: 10.0,
+                              ),
+                              // Electricity
+                              Column(
+                                children: [
+                                  Container(
+                                    height: 45,
+                                    width: 45,
+                                    decoration: BoxDecoration(
+                                        borderRadius:
+                                            BorderRadius.circular(10.0),
+                                        color: const Color(0xFFf3e9e9)),
+                                    child: const Icon(
+                                      Icons.light,
+                                      color: Color(0xFFb4686f),
+                                      size: 20.0,
+                                    ),
+                                  ),
+                                  const SizedBox(
+                                    height: 8.0,
+                                  ),
+                                  Text(
+                                    "Electricity",
+                                    style: GoogleFonts.poppins(
+                                        color: const Color(0xFF77767b),
+                                        fontSize: 10.0,
+                                        fontWeight: FontWeight.w500),
+                                  )
+                                ],
+                              ),
+                            ],
+                          ),
+                          Column(
+                            children: [
+                              // Pay Bills
+                              Column(
+                                children: [
+                                  Container(
+                                    height: 45,
+                                    width: 45,
+                                    decoration: BoxDecoration(
+                                        borderRadius:
+                                            BorderRadius.circular(10.0),
+                                        color: const Color(0xFFf3eed9)),
+                                    child: const Icon(
+                                      Icons.receipt_long_outlined,
+                                      color: Color(0xFFeac77f),
+                                      size: 20.0,
+                                    ),
+                                  ),
+                                  const SizedBox(
+                                    height: 8.0,
+                                  ),
+                                  Text(
+                                    "Pay Bills",
+                                    style: GoogleFonts.poppins(
+                                        color: const Color(0xFF77767b),
+                                        fontSize: 10.0,
+                                        fontWeight: FontWeight.w500),
+                                  )
+                                ],
+                              ),
+                              const SizedBox(
+                                height: 10.0,
+                              ),
+                              // Movie
+                              Column(
+                                children: [
+                                  Container(
+                                    height: 45,
+                                    width: 45,
+                                    decoration: BoxDecoration(
+                                        borderRadius:
+                                            BorderRadius.circular(10.0),
+                                        color: const Color(0xFFeaeaf0)),
+                                    child: const Icon(
+                                      Icons.movie,
+                                      color: Color(0xFF8065c4),
+                                      size: 20.0,
+                                    ),
+                                  ),
+                                  const SizedBox(
+                                    height: 8.0,
+                                  ),
+                                  Text(
+                                    "Movie",
+                                    style: GoogleFonts.poppins(
+                                        color: const Color(0xFF77767b),
+                                        fontSize: 10.0,
+                                        fontWeight: FontWeight.w500),
+                                  )
+                                ],
+                              ),
+                            ],
+                          ),
+                          Column(
+                            children: [
+                              // Bank Transfer
+                              Column(
+                                children: [
+                                  Container(
+                                    height: 45,
+                                    width: 45,
+                                    decoration: BoxDecoration(
+                                        borderRadius:
+                                            BorderRadius.circular(10.0),
+                                        color: const Color(0xFFf5e8e8)),
+                                    child: const Icon(
+                                      Icons.museum,
+                                      color: Color(0xFFce8490),
+                                      size: 20.0,
+                                    ),
+                                  ),
+                                  const SizedBox(
+                                    height: 8.0,
+                                  ),
+                                  Text(
+                                    "Bank Transfer",
+                                    style: GoogleFonts.poppins(
+                                        color: const Color(0xFF77767b),
+                                        fontSize: 10.0,
+                                        fontWeight: FontWeight.w500),
+                                  )
+                                ],
+                              ),
+                              const SizedBox(
+                                height: 10.0,
+                              ),
+                              // Add Money
+                              Column(
+                                children: [
+                                  Container(
+                                    height: 45,
+                                    width: 45,
+                                    decoration: BoxDecoration(
+                                        borderRadius:
+                                            BorderRadius.circular(10.0),
+                                        color: const Color(0xFFd7daf3)),
+                                    child: const Icon(
+                                      Icons.wallet_outlined,
+                                      color: Color(0xFF5f5de9),
+                                      size: 20.0,
+                                    ),
+                                  ),
+                                  const SizedBox(
+                                    height: 8.0,
+                                  ),
+                                  Text(
+                                    "Add Money",
+                                    style: GoogleFonts.poppins(
+                                        color: const Color(0xFF77767b),
+                                        fontSize: 10.0,
+                                        fontWeight: FontWeight.w500),
+                                  )
+                                ],
+                              ),
+                            ],
+                          ),
+                          Column(
+                            children: [
+                              // Savings
+                              Column(
+                                children: [
+                                  Container(
+                                    height: 45,
+                                    width: 45,
+                                    decoration: BoxDecoration(
+                                        borderRadius:
+                                            BorderRadius.circular(10.0),
+                                        color: const Color(0xFFece6f2)),
+                                    child: const Icon(
+                                      Icons.museum,
+                                      color: Color(0xFF7d68b6),
+                                      size: 20.0,
+                                    ),
+                                  ),
+                                  const SizedBox(
+                                    height: 8.0,
+                                  ),
+                                  Text(
+                                    "Savings",
+                                    style: GoogleFonts.poppins(
+                                        color: const Color(0xFF77767b),
+                                        fontSize: 10.0,
+                                        fontWeight: FontWeight.w500),
+                                  )
+                                ],
+                              ),
+                              const SizedBox(
+                                height: 10.0,
+                              ),
+                              // Share
+                              Column(
+                                children: [
+                                  Container(
+                                    height: 45,
+                                    width: 45,
+                                    decoration: BoxDecoration(
+                                        borderRadius:
+                                            BorderRadius.circular(10.0),
+                                        color: const Color(0xFFf5ead6)),
+                                    child: const Icon(
+                                      Icons.share,
+                                      color: Color(0xFFe6bc7a),
+                                      size: 20.0,
+                                    ),
+                                  ),
+                                  const SizedBox(
+                                    height: 8.0,
+                                  ),
+                                  Text(
+                                    "Share",
+                                    style: GoogleFonts.poppins(
+                                        color: const Color(0xFF77767b),
+                                        fontSize: 10.0,
+                                        fontWeight: FontWeight.w500),
+                                  )
+                                ],
+                              ),
+                            ],
+                          ),
+                        ],
                       )
                     ],
                   ),
