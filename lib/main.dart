@@ -99,9 +99,8 @@ class _MyHomePageState extends State<MyHomePage> {
                     )
                   ],
                 ),
-                // Card
                 const SizedBox(height: 25.0),
-                // Wallet Information
+                // Wallet Information Card
                 Container(
                   padding: const EdgeInsets.all(10.0),
                   decoration: BoxDecoration(
@@ -324,10 +323,10 @@ class _MyHomePageState extends State<MyHomePage> {
                     ],
                   ),
                 ),
-                // Other Services
                 const SizedBox(
                   height: 20.0,
                 ),
+                // Other Services Card
                 Container(
                   padding: const EdgeInsets.all(10.0),
                   decoration: BoxDecoration(
@@ -341,8 +340,9 @@ class _MyHomePageState extends State<MyHomePage> {
                     children: [
                       Text(
                         "Other Services",
-                        style:
-                            GoogleFonts.poppins(color: const Color(0xFF77767b)),
+                        style: GoogleFonts.poppins(
+                            color: const Color(0xFF77767b),
+                            fontWeight: FontWeight.w600),
                       ),
                       const SizedBox(
                         height: 10.0,
@@ -607,6 +607,37 @@ class _MyHomePageState extends State<MyHomePage> {
                     ],
                   ),
                 ),
+                const SizedBox(
+                  height: 10.0,
+                ),
+                // Recent Activity
+                Row(
+                  children: [
+                    Text(
+                      "Recent Activity",
+                      style: GoogleFonts.poppins(
+                          color: const Color(0xFF77767b),
+                          fontWeight: FontWeight.w600),
+                    ),
+                    const Spacer(),
+                    Row(
+                      children: [
+                        Text(
+                          "See all",
+                          style: GoogleFonts.poppins(
+                            color: const Color(0xFFa0bde3),
+                            fontSize: 10.0
+                          ),
+                        ),
+                        const Icon(
+                          Icons.chevron_right_outlined,
+                          color: Color(0xFFa0bde3),
+                          size: 17.0,
+                        ),
+                      ],
+                    )
+                  ],
+                )
               ],
             )));
   }
