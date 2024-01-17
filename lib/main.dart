@@ -28,12 +28,44 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  // BottomNavBar()
+  ClipRRect _getBtmNavbar() {
+    return const ClipRRect(
+      borderRadius: BorderRadius.only(
+        topLeft: Radius.circular(40),
+        topRight: Radius.circular(40),
+      ),
+      child: BottomAppBar(
+        shape: CircularNotchedRectangle(),
+        color: Color.fromARGB(255, 255, 255, 255),
+        notchMargin: 0,
+        child: SizedBox(
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: <Widget>[
+              Icon(
+                Icons.home,
+                color: Color(0xFF404abf),
+                size: 40.0,
+              ),
+              Icon(
+                Icons.person_outline,
+                color: Color(0xFF858585),
+                size: 40.0,
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color(0xFFebedf5),
       body: Container(
-          padding: const EdgeInsets.all(20.0),
+          padding: const EdgeInsets.only(left: 20.0, right: 20.0, top: 20.0),
           width: double.infinity,
           height: double.infinity,
           child: ListView(
@@ -330,7 +362,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 padding: const EdgeInsets.all(10.0),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(16.0),
-                  color: const Color(0xFFf5f5f5),
+                  color: Colors.white,
                 ),
                 height: 210.0,
                 width: double.infinity,
@@ -856,6 +888,7 @@ class _MyHomePageState extends State<MyHomePage> {
         focusColor: const Color(0xFF404abf),
         hoverColor: const Color(0xFF404abf),
         splashColor: const Color(0xFF404abf),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(100)),
         child: const Icon(
           Icons.qr_code_scanner,
           color: Colors.white,
@@ -864,28 +897,7 @@ class _MyHomePageState extends State<MyHomePage> {
         onPressed: () => {},
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
-      bottomNavigationBar: const BottomAppBar(
-        shape: CircularNotchedRectangle(),
-        color: Color(0xFFf5f5f5),
-        notchMargin: 0,
-        child: SizedBox(
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: <Widget>[
-              Icon(
-                Icons.home,
-                color: Color(0xFF404abf),
-                size: 50.0,
-              ),
-              Icon(
-                Icons.person_outline,
-                color: Color(0xFF858585),
-                size: 50.0,
-              ),
-            ],
-          ),
-        ),
-      ),
+      bottomNavigationBar: _getBtmNavbar(),
     );
   }
 }
