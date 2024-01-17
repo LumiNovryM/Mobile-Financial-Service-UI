@@ -100,6 +100,7 @@ class _HistoryState extends State<History> {
               ],
             ),
             const SizedBox(height: 25.0),
+            // Tap for Send Money
             Container(
               padding: const EdgeInsets.all(10.0),
               decoration: BoxDecoration(
@@ -138,6 +139,7 @@ class _HistoryState extends State<History> {
               ),
             ),
             const SizedBox(height: 25.0),
+            // Recent Transfer
             Container(
                 padding: const EdgeInsets.all(10.0),
                 decoration: BoxDecoration(
@@ -249,6 +251,38 @@ class _HistoryState extends State<History> {
                     ),
                   ],
                 )),
+            const SizedBox(
+                height: 10.0,
+              ),
+            // Recent Transactions
+            Row(
+              children: [
+                Text(
+                  "Recent Transactions",
+                  style: GoogleFonts.poppins(
+                      color: const Color(0xFF77767b),
+                      fontWeight: FontWeight.w600),
+                ),
+                const Spacer(),
+                Row(
+                  children: [
+                    Text(
+                      "See all",
+                      style: GoogleFonts.poppins(
+                          color: const Color(0xFF77767b), fontSize: 10.0),
+                    ),
+                    const Icon(
+                      Icons.chevron_right_outlined,
+                      color: Color(0xFF77767b),
+                      size: 17.0,
+                    ),
+                  ],
+                )
+              ],
+            ),
+            const SizedBox(
+              height: 15.0,
+            ),
           ],
         ),
       ),
