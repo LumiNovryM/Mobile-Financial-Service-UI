@@ -85,7 +85,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     const Spacer(),
                     Container(
                       height: 40,
-                      width: 50,
+                      width: 65,
                       decoration: BoxDecoration(
                         border: Border.all(
                             width: 1.5, color: const Color(0xFFc7cad0)),
@@ -625,9 +625,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         Text(
                           "See all",
                           style: GoogleFonts.poppins(
-                            color: const Color(0xFFa0bde3),
-                            fontSize: 10.0
-                          ),
+                              color: const Color(0xFFa0bde3), fontSize: 10.0),
                         ),
                         const Icon(
                           Icons.chevron_right_outlined,
@@ -636,6 +634,227 @@ class _MyHomePageState extends State<MyHomePage> {
                         ),
                       ],
                     )
+                  ],
+                ),
+                const SizedBox(
+                  height: 15.0,
+                ),
+                // Recent Activity History
+                Column(
+                  children: [
+                    Container(
+                      padding: const EdgeInsets.all(10.0),
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(15.0),
+                      ),
+                      child: Row(
+                        children: [
+                          Container(
+                            height: 45,
+                            width: 45,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(100.0),
+                            ),
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(100.0),
+                              child: const Image(
+                                image: NetworkImage(
+                                    'https://media.licdn.com/dms/image/D4E03AQF0-X7TvMFGTg/profile-displayphoto-shrink_800_800/0/1697602264094?e=1710979200&v=beta&t=2e2yXmGlLeQapwsm5MD3rPIbMvEsexB1G_Y7CjRignI'),
+                              ),
+                            ),
+                          ),
+                          const SizedBox(
+                            width: 10.0,
+                          ),
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                "Lumi Novry M",
+                                style: GoogleFonts.poppins(
+                                    color: const Color(
+                                      0xFF6e6f73,
+                                    ),
+                                    fontSize: 12.0,
+                                    fontWeight: FontWeight.bold),
+                              ),
+                              Text(
+                                "Send Money",
+                                style: GoogleFonts.poppins(
+                                    color: const Color(0xFFaacef1),
+                                    fontSize: 11.0),
+                              ),
+                            ],
+                          ),
+                          const Spacer(),
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.end,
+                            children: [
+                              Text(
+                                "-\$66.02",
+                                style: GoogleFonts.poppins(
+                                    color: const Color(
+                                      0xFFaacef1,
+                                    ),
+                                    fontSize: 12.0,
+                                    fontWeight: FontWeight.bold),
+                              ),
+                              Text(
+                                "2024-17-2 04:09 PM",
+                                style: GoogleFonts.poppins(
+                                    color: const Color(0xFFcfcfcf),
+                                    fontSize: 10.0),
+                              ),
+                            ],
+                          )
+                        ],
+                      ),
+                    ),
+                    const SizedBox(
+                      height: 10.0,
+                    ),
+                    Container(
+                      padding: const EdgeInsets.all(10.0),
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(15.0),
+                      ),
+                      child: Row(
+                        children: [
+                          Container(
+                            height: 45,
+                            width: 45,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(100.0),
+                            ),
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(100.0),
+                              child: const Image(
+                                image: NetworkImage(
+                                    'https://avatars.githubusercontent.com/u/92445460?v=4'),
+                              ),
+                            ),
+                          ),
+                          const SizedBox(
+                            width: 10.0,
+                          ),
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                "Kenshi Takahashi",
+                                style: GoogleFonts.poppins(
+                                    color: const Color(
+                                      0xFF6e6f73,
+                                    ),
+                                    fontSize: 12.0,
+                                    fontWeight: FontWeight.bold),
+                              ),
+                              Text(
+                                "Cashout",
+                                style: GoogleFonts.poppins(
+                                    color: const Color(0xFFefa5b1),
+                                    fontSize: 11.0),
+                              ),
+                            ],
+                          ),
+                          const Spacer(),
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.end,
+                            children: [
+                              Text(
+                                "-\$120.02",
+                                style: GoogleFonts.poppins(
+                                    color: const Color(
+                                      0xFFefa5b1,
+                                    ),
+                                    fontSize: 12.0,
+                                    fontWeight: FontWeight.bold),
+                              ),
+                              Text(
+                                "2024-17-2 04:09 PM",
+                                style: GoogleFonts.poppins(
+                                    color: const Color(0xFFcfcfcf),
+                                    fontSize: 10.0),
+                              ),
+                            ],
+                          )
+                        ],
+                      ),
+                    ),
+                    const SizedBox(
+                      height: 10.0,
+                    ),
+                    Container(
+                      padding: const EdgeInsets.all(10.0),
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(15.0),
+                      ),
+                      child: Row(
+                        children: [
+                          Container(
+                            height: 45,
+                            width: 45,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(100.0),
+                            ),
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(100.0),
+                              child: const Image(
+                                image: NetworkImage(
+                                    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoVPDJ2V9sgNh9gXZgkwN1_MSiAfR9gSslVg&usqp=CAU'),
+                              ),
+                            ),
+                          ),
+                          const SizedBox(
+                            width: 10.0,
+                          ),
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                "Toji Fushiguro",
+                                style: GoogleFonts.poppins(
+                                    color: const Color(
+                                      0xFF6e6f73,
+                                    ),
+                                    fontSize: 12.0,
+                                    fontWeight: FontWeight.bold),
+                              ),
+                              Text(
+                                "Send Money",
+                                style: GoogleFonts.poppins(
+                                    color: const Color(0xFFaacef1),
+                                    fontSize: 11.0),
+                              ),
+                            ],
+                          ),
+                          const Spacer(),
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.end,
+                            children: [
+                              Text(
+                                "-\$50.00",
+                                style: GoogleFonts.poppins(
+                                    color: const Color(
+                                      0xFFaacef1,
+                                    ),
+                                    fontSize: 12.0,
+                                    fontWeight: FontWeight.bold),
+                              ),
+                              Text(
+                                "2024-17-2 04:09 PM",
+                                style: GoogleFonts.poppins(
+                                    color: const Color(0xFFcfcfcf),
+                                    fontSize: 10.0),
+                              ),
+                            ],
+                          )
+                        ],
+                      ),
+                    ),
                   ],
                 )
               ],
